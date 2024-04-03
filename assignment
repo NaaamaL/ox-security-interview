@@ -1,0 +1,24 @@
+The assignment is to create and then send to Ox Security IAC (Infrastructure as Code) of the
+following:
+1. A script to deploy a minikube cluster ( ie: minikube start )
+2. A script to deploy redis server helm chart on the cluster ( ie: Redis )
+3. A helm chart defining a deployment with a single container, that container should have
+the ability to connect to the redis server ( ie: redis - Official Image | Docker Hub ). The
+deployment should remain up, allowing the user to “exec” into the container to run redis
+commands.
+4. A script to deploy the above helm chart on the cluster
+5. A script to “exec” to the deployment and set a new key in the redis server (OxKey) with a
+value (OxValue)
+6. A script to “exec” to the deployment and get the value of the key (OxKey) and print it
+back out
+Please feel free to choose whichever preferred scripting language you want, Python, Bash,
+Terraform, Ansible, etc. you are encouraged to add comments where you believe they are
+appropriate to the interviewer to better understand your logic and intentions. When submitting
+the assignment, please package all files together in a .tar or .zip file. Please include a readme
+file to explain how you expect the scripts to be triggered.
+You will be asked to demonstrate the assignment during the following interview. You will be
+expected to arrive ready for the interview with the above assignment deployed and running and
+available for you to interact with. That means the cluster should be up and running with redis
+and the deployment. You will be asked to “exec” to the deployment and show setting/getting
+values from the redis cache during the interview. You will also be asked to perform other tasks
+during the hands-on interview so that we can assess and verify your skills
