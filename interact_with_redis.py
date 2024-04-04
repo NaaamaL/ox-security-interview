@@ -46,7 +46,6 @@ def get_redis_server_service_name(component: str) -> str:
         print(f"Error output: {e.output}")
         return None
 
-
 def exec_command(pod_name: str, command: str):
     """
     Execute a command in a k8s pod.
